@@ -1,0 +1,42 @@
+body {
+  background: #202020;
+  color: white;
+}
+
+.container {
+  text-align: center;
+}
+
+h1 {
+  padding: 10px;
+}
+
+.sections {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+}
+
+.section {
+  padding: 5px 10px;
+  margin: 5px;
+  text-align: justify;
+  background: steelblue;
+  color: white;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.fa-angle-down {
+  float: right;
+}
+
+#active {
+  transform: rotate(180deg);
+  transition: all 0.3s;
+}
+
+#hidden {
+  display: none;
+}

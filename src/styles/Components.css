@@ -1,0 +1,55 @@
+.info {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  text-align: justify;
+}
+
+.info > input {
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+.info > * {
+  padding: 10px;
+}
+
+.btns {
+  text-align: center;
+}
+
+.btn {
+  padding: 10px;
+  font-size: 16px;
+  margin: 5px;
+  background: steelblue;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 30px;
+  outline: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  transition: all 0.3s;
+}
+
+.cancel {
+  background: transparent;
+  font-size: 15px;
+  border: 1px solid steelblue;
+  color: steelblue;
+}
+
+.data {
+  font-size: 16px;
+  text-align: justify;
+  font-weight: 500;
+  padding: 10px;
+  margin: 10px;
+  background: #f3f3f3;
+  color: black;
+}
