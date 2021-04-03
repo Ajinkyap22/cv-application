@@ -10,7 +10,6 @@ class Experience extends Component {
       company: "",
       position: "",
       years: "",
-      data: [],
       isEditing: true,
     };
 
@@ -28,11 +27,6 @@ class Experience extends Component {
   submitForm(e) {
     e.preventDefault();
     this.setState({
-      data: this.state.data.concat([
-        this.state.company,
-        this.state.position,
-        this.state.years,
-      ]),
       isEditing: false,
     });
   }
@@ -72,6 +66,7 @@ class Experience extends Component {
             placeholder="How long did you work there?"
             onChange={this.handleChange}
             value={this.state.years}
+            min="0"
             required
           />
           <div className="btns">
@@ -91,7 +86,11 @@ class Experience extends Component {
     } else {
       return (
         <div>
-          <DisplayExperience data={this.state.data} />
+          <DisplayExperience
+            company={this.state.company}
+            position={this.state.position}
+            years={this.state.years}
+          />
           <button className="btn" onClick={this.toggleEditing}>
             Edit &nbsp;{" "}
             <i className="fa fa-pencil-square-o" aria-hidden="true"></i>

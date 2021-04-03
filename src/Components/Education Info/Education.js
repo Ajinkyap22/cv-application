@@ -10,7 +10,6 @@ class Education extends Component {
       qual: "",
       institute: "",
       location: "",
-      data: [],
       isEditing: true,
     };
 
@@ -34,11 +33,6 @@ class Education extends Component {
   submitForm(e) {
     e.preventDefault();
     this.setState({
-      data: this.state.data.concat([
-        this.state.qual,
-        this.state.institute,
-        this.state.location,
-      ]),
       isEditing: false,
     });
   }
@@ -91,7 +85,11 @@ class Education extends Component {
     } else {
       return (
         <div>
-          <DisplayEducation data={this.state.data} />
+          <DisplayEducation
+            qual={this.state.qual}
+            institute={this.state.institute}
+            location={this.state.location}
+          />
           <button className="btn" onClick={this.toggleEditing}>
             Edit &nbsp;{" "}
             <i className="fa fa-pencil-square-o" aria-hidden="true"></i>

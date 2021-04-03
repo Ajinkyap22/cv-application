@@ -11,7 +11,7 @@ class General extends Component {
       email: "",
       phone: "",
       age: "",
-      data: [],
+
       isEditing: true,
     };
 
@@ -29,12 +29,6 @@ class General extends Component {
   submitForm(e) {
     e.preventDefault();
     this.setState({
-      data: this.state.data.concat([
-        this.state.name,
-        this.state.email,
-        this.state.phone,
-        this.state.age,
-      ]),
       isEditing: false,
     });
   }
@@ -105,7 +99,10 @@ class General extends Component {
       return (
         <div>
           <DisplayGeneral
-            data={this.state.data}
+            name={this.state.name}
+            email={this.state.email}
+            phone={this.state.phone}
+            age={this.state.age}
             isEditing={this.state.isEditing}
           />
           <button className="btn" onClick={this.toggleEditing}>

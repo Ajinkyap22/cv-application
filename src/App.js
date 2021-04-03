@@ -9,7 +9,7 @@ class App extends Component {
     super(props);
 
     this.state = {
-      general: false,
+      general: true,
       education: false,
       experience: false,
     };
@@ -78,3 +78,7 @@ class App extends Component {
 }
 
 export default App;
+
+// Check responsive
+
+// edit readme
