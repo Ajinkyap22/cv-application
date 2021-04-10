@@ -1,4 +1,4 @@
-# Project Name
+# CV Application
 > A web application to that builds a CV for the user. My 1st ever React project. 
 
 ## Table of contents
