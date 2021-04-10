@@ -26,7 +26,7 @@
 * You will need to install Node.js
 * Go to the project directory in the terminal & install the required dependencies by using: npm install
 * Build the distribution files using: npm run build
-* Just run the index.html file to run the project
+* Type the command : npm run start
 
 ## Features
 
